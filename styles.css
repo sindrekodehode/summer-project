@@ -278,9 +278,11 @@ input[type="number"] {
 
   main {
     padding: 0;
+    margin: 0;
   }
   footer {
     padding: 0;
+    margin: 0;
   }
 
   .grid-container {
