@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-image: url(/images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
+  /* background-image: url(./images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; */
@@ -17,7 +17,7 @@ body {
     "main main main"
     "footer footer footer";
   color: whitesmoke;
-  background-image: url(/images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
+  background-image: url(./images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
