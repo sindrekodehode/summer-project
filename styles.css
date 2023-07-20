@@ -278,6 +278,16 @@ input[type="number"] {
     max-width: 80px;
   }
 
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+
   main {
     padding: 0;
     margin: 0;
