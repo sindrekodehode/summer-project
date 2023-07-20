@@ -8,6 +8,10 @@ body {
   background-repeat: no-repeat;
   /* background-position: center; */
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /* Page layout */
 .grid-container {
@@ -280,6 +284,10 @@ input[type="number"] {
   }
   header .icon img {
     max-width: 80px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
   }
 
   ul {
