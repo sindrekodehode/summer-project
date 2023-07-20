@@ -276,6 +276,13 @@ input[type="number"] {
     max-width: 80px;
   }
 
+  main {
+    padding: 0;
+  }
+  footer {
+    padding: 0;
+  }
+
   .grid-container {
     color: whitesmoke;
     max-width: 640px;
