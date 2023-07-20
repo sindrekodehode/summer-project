@@ -7,6 +7,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -23,8 +24,8 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 0 5em;
   grid-area: header;
@@ -52,6 +53,11 @@ footer {
 
 header .icon img {
   max-width: 150px;
+  grid-column: 1 / 1;
+}
+
+header h1 {
+  grid-column: 1 / 2;
 }
 
 /* Planet card spesifications */
@@ -273,16 +279,20 @@ input[type="number"] {
     margin: 0;
     padding: 0;
   }
-  *{
-    margin: 0;
+  * {
     padding: 0;
+    margin: 0;
   }
   header .icon img {
     max-width: 80px;
   }
-  * {
-    margin: 0;
+  main {
     padding: 0;
+    margin: 0;
+  }
+  footer {
+    padding: 0;
+    margin: 0;
   }
 
   ul {
@@ -291,15 +301,6 @@ input[type="number"] {
   }
 
   h1 {
-    padding: 0;
-    margin: 0;
-  }
-
-  main {
-    padding: 0;
-    margin: 0;
-  }
-  footer {
     padding: 0;
     margin: 0;
   }
@@ -325,6 +326,7 @@ input[type="number"] {
     transform: translate(0px, var(--displace));
     animation: none;
   }
+
   .sun .planet button {
     animation: none;
   }
