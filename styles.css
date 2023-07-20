@@ -53,11 +53,13 @@ footer {
 
 header .icon img {
   max-width: 150px;
-  grid-column: 1 / 1;
+}
+header .icon {
+  grid-column: 1 / 2;
 }
 
-header h1 {
-  grid-column: 1 / 2;
+header .container {
+  grid-column: 2 / 4;
 }
 
 /* Planet card spesifications */
