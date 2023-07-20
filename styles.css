@@ -6,7 +6,6 @@ body {
   background-image: url(./images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  /* background-position: center; */
 }
 * {
   margin: 0;
@@ -21,10 +20,6 @@ body {
     "main main main"
     "footer footer footer";
   color: whitesmoke;
-  /* background-image: url(./images/ivana-cajina-asuyh-_ZX54-unsplash.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 header {
@@ -330,6 +325,13 @@ input[type="number"] {
     transform: translate(0px, var(--displace));
     animation: none;
   }
+  .sun .planet button {
+    animation: none;
+  }
+  #moon button {
+    animation: none;
+  }
+
   .anim-container {
     display: flex;
     flex-direction: column;
