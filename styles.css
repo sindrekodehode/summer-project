@@ -38,7 +38,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-area: main;
   padding-top: 5em;
-  place-items: center;
+  /* place-items: center; */
 }
 
 footer {
@@ -53,24 +53,34 @@ footer {
 
 header .icon img {
   max-width: 150px;
-}
-header .icon {
-  grid-column: 1 / 2;
+  /* grid-column: 1 / 1; */
 }
 
-header .container {
+#h1-container {
   grid-column: 2 / 4;
 }
 
 /* Planet card spesifications */
-
-.card {
+.card-container {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 70vh;
+  width: 300px;
+}
+.card-stacker {
+  position: relative;
+}
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
   text-align: center;
   align-items: center;
-  max-width: 300px;
+  width: 300px;
   flex-direction: column;
   padding: 20px 50px;
   border-radius: 20px;
@@ -275,7 +285,7 @@ input[type="number"] {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
   body {
     width: 100%;
     margin: 0;
@@ -294,7 +304,7 @@ input[type="number"] {
     margin: 0;
   }
   footer {
-    padding: 0;
+    padding-top: 50px;
     margin: 0;
   }
 
@@ -303,7 +313,8 @@ input[type="number"] {
     margin: 0;
   }
 
-  h1 {
+  header h1 {
+    grid-column: 2 / 4;
     padding: 0;
     margin: 0;
   }
@@ -377,5 +388,125 @@ input[type="number"] {
 
   .planet:nth-of-type(9) {
     --displace: calc(var(--size) * 10);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    background-repeat: repeat;
+    max-width: 460px;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+    max-width: 460px;
+  }
+  #h1-container {
+    grid-column: 2 / 3;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  .card {
+    overflow: hidden;
+  }
+  header {
+    padding-bottom: 100px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    width: inherit;
+  }
+  .anim-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    place-items: center;
+  }
+  .card-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .planet {
+    --size: 25px;
+    --radius: 75px;
+
+    display: grid;
+    place-items: center;
+    width: var(--size);
+    top: calc(var(--size) / 2);
+    left: calc(var(--size) / 2);
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0);
+    animation: orbit linear 60s infinite;
+    animation-play-state: var(--orbit-play-state, running);
+
+    transform: translate(
+      calc(cos(var(--degrees)) * var(--radius)),
+      calc(sin(var(--degrees)) * var(--radius))
+    );
+  }
+  .sun {
+    width: 50px;
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .sun button {
+    overflow: hidden;
+  }
+
+  #ura-img {
+    height: 35px;
+    width: 35px;
+  }
+
+  #moon {
+    transform: translate(
+      calc(cos(var(--degrees)) * 25px),
+      calc(sin(var(--degrees)) * 25px)
+    );
+  }
+
+  .planet:nth-of-type(1) {
+    --degrees: 0deg;
+  }
+
+  .planet:nth-of-type(2) {
+    --degrees: 40deg;
+  }
+
+  .planet:nth-of-type(3) {
+    --degrees: 80deg;
+  }
+
+  .planet:nth-of-type(4) {
+    --degrees: 120deg;
+  }
+
+  .planet:nth-of-type(5) {
+    --degrees: 160deg;
+  }
+
+  .planet:nth-of-type(6) {
+    --degrees: 200deg;
+  }
+
+  .planet:nth-of-type(7) {
+    --degrees: 240deg;
+  }
+
+  .planet:nth-of-type(8) {
+    --degrees: 280deg;
+  }
+
+  .planet:nth-of-type(9) {
+    --degrees: 320deg;
   }
 }

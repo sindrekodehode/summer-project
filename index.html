@@ -15,7 +15,7 @@
     <div class="grid-container">
       <header>
         <div class="icon"><img src="./images/crabcion.svg" alt=""></div>
-        <div class="container"><h1>Space, the final frontier!</h1></div>
+        <div class="container" id="h1-container"><h1>Space, the final frontier!</h1></div>
         
       </header>
 
@@ -36,104 +36,108 @@
           </div>
           
         </div>
-        <div class="card" id="sun-card">
-          <h2>The Sun</h2>
-          <img src="./images/nasa-Sun-unsplash.jpg" alt="">
-          <p>The Sun is the star in the center of our Solar System. All the planets orbit around the Sun and it is source of our heat and light. The Sun has a mass equal to 332.95 Earths.  Check your weight on the Sun by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="sun-input-value" min="1" max="999" value="1" required><button id="sun-card-btn" class="input-btn">Calculate</button>
+        <div class="card-container">
+          <div class="card-stacker">
+          <div class="card" id="sun-card">
+            <h2>The Sun</h2>
+            <img src="./images/nasa-Sun-unsplash.jpg" alt="">
+            <p>The Sun is the star in the center of our Solar System. All the planets orbit around the Sun and it is source of our heat and light. The Sun has a mass equal to 332.95 Earths.  Check your weight on the Sun by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="sun-input-value" min="1" max="999" value="1" required><button id="sun-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on the Sun would be <span id="sun-weight">¯\_(ツ)_/¯</span> kg!</p>
           </div>
-          <p>Your weight on the Sun would be <span id="sun-weight">¯\_(ツ)_/¯</span> kg!</p>
+          <div class="card" id="merc-card">
+            <h2>Mercury</h2>
+            <img src="./images/nasa-Mercury-unsplash.jpg" alt="">
+            <p> Mercury is the first planet and thus the closest to the Sun. Mercury is the smallest planet in the Solar System (we get back to this later). Mercury has a mass equal to 0.055 Earths.  Check your weight on Mercury by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="merc-input-value" min="1" max="999" required><button id="merc-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on Mercury would be <span id="merc-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
+          <div class="card" id="ven-card">
+            <h2>Venus</h2>
+            <img src="./images/nasa-Venus-unsplash.jpg" alt="">
+            <p>Venus is the second planet in the Solar System. The mean surface temperature of 464 °C makes it sound quite inhospitable, but because of the high pressure atmosphere and relatively earth-like conditions at higher altitudes it has been theorized that Venus could be a good candidate for colonization with floating cities. Venus has a mass equal to 0.815 Earths.  Check your weight on Venus by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="ven-input-value" min="1" max="999" required><button id="ven-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on Venus would be <span id="ven-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
+          <div class="card" id="earth-card">
+            <h2>Earth</h2>
+            <img src="./images/nasa-Earth-unsplash.jpg" alt="">
+            <p>Earth is the third planet in the Solar System and and home to most people. Earth has a mass equal to 1.0 Earths.  Check your weight on Earth by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="earth-input-value" min="1" max="999" required><button id="earth-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on Earth would be <span id="earth-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
+          <div class="card" id="moon-card">
+            <h2>Moon</h2>
+            <img src="./images/michael-G9bDsVeHM7I-unsplash.jpg" alt="">
+            <p>The Moon is Earth's only moon and is tidally locked to Earth, meaning that the same side always faces Earth.  The Moon was first reached by humans by the Apollo 11 mission in 1969. The Moon has a mass equal to 0.0123 Earths.  Check your weight on the Moon by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="moon-input-value" min="1" max="999" required><button id="moon-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on the Moon would be <span id="moon-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
+          <div class="card" id="mars-card">
+            <h2>Mars</h2>
+            <img src="./images/nasa-Mars-unsplash.jpg" alt="">
+            <p>Mars is the fourth planet in the Solar System and is often referred to as the red planet.  Mars is currently the main target of colonization and considered the first step to becoming an interstellar civilization.  Mars has a mass equal to 0.107 Earths.  Check your weight on Mars by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="mars-input-value" min="1" max="999" required><button id="mars-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on Mars would be <span id="mars-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
+          <div class="card" id="jup-card">
+            <h2>Jupiter</h2>
+            <img src="./images/nasa-Jupiter-unsplash (1).jpg" alt="">
+            <p>Jupiter is the fifth planet in the Solar System and as a massive gas giant also the largest of the planets. Jupiter has 95 discovered moons, but the most interesting of them might be the ice-covered Europa.  There is a possibility that underneath the ice, in the dark ocean, lie the first extraterrestrial life that we encounter. Jupiter has a mass equal to 317.8 Earths.  Check your weight on Jupiter by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="jup-input-value" min="1" max="999" required><button id="jup-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on Jupiter would be <span id="jup-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
+          <div class="card" id="sat-card">
+            <h2>Saturn</h2>
+            <img src="./images/nasa-Saturn-unsplash.jpg" alt="">
+            <p>Saturn is the sixth planet in the Solar System and is best known for its large ring system.  Saturn, like Jupiter, is a gas giant and has at least a whopping 146 moons. The largest moon, Titan, is larger than the planet Mercury. Saturn has a mass equal to 95.159 Earths.  Check your weight on Saturn by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="sat-input-value" min="1" max="999" required><button id="sat-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on Saturn would be <span id="sat-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
+          <div class="card" id="ura-card">
+            <h2>Uranus</h2>
+            <img src="./images/nasa-Uranus-unsplash.jpg" alt="">
+            <p>Uranus is the seventh planet in the Solar System. Uranus is an ice giant with a lowest minimum temperature of 49 Kelvin or -224 °C. Although Uranus also has a ring system similar to that of Saturn, it is extremely dark in comparison. Uranus has a mass equal to 14.563 Earths.  Check your weight on Mars by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="ura-input-value" min="1" max="999" required><button id="ura-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on Uranus would be <span id="ura-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
+          <div class="card" id="nep-card">
+            <h2>Neptune</h2>
+            <img src="./images/nasa-Neptune-unsplash.jpg" alt="">
+            <p>Neptune is the eigth planet in the Solar System.  Neptune, like its brother planet Uranus, is an ice giant, but unlike Uranus it has active weather patterns.  The 1989 Voyager 2 flyby recorded a "Great Dark Spot" similar to the "Great Red Spot" on Jupiter. Neptune has a mass equal to 17.147 Earths.  Check your weight on Neptune by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="nep-input-value" min="1" max="999" required><button id="nep-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on Neptune would be <span id="nep-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
+          <div class="card" id="pluto-card">
+            <h2>Pluto</h2>
+            <img src="./images/nasa--Pluto-unsplash.jpg" alt="">
+            <p>Pluto, although some scientists seem to disagree, is the ninth planet in the Solar System. In 2006 the International Astronomical Union changed the definition of a planet and started calling Pluto a "dwarf planet", but many planetary astrologers and common folk alike disagree. Pluto has a mass equal to 0.00218 Earths.  Check your weight on Pluto by typing your weight below.</p>
+            <div class="input-container">
+                <input type="number" id="pluto-input-value" min="1" max="999" required><button id="pluto-card-btn" class="input-btn">Calculate</button>
+            </div>
+            <p>Your weight on Pluto would be <span id="pluto-weight">¯\_(ツ)_/¯</span> kg!</p>
+          </div>
         </div>
-        <div class="card" id="merc-card">
-          <h2>Mercury</h2>
-          <img src="./images/nasa-Mercury-unsplash.jpg" alt="">
-          <p> Mercury is the first planet and thus the closest to the Sun. Mercury is the smallest planet in the Solar System (we get back to this later). Mercury has a mass equal to 0.055 Earths.  Check your weight on Mercury by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="merc-input-value" min="1" max="999" required><button id="merc-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on Mercury would be <span id="merc-weight">¯\_(ツ)_/¯</span> kg!</p>
-        </div>
-        <div class="card" id="ven-card">
-          <h2>Venus</h2>
-          <img src="./images/nasa-Venus-unsplash.jpg" alt="">
-          <p>Venus is the second planet in the Solar System. The mean surface temperature of 464 °C makes it sound quite inhospitable, but because of the high pressure atmosphere and relatively earth-like conditions at higher altitudes it has been theorized that Venus could be a good candidate for colonization with floating cities. Venus has a mass equal to 0.815 Earths.  Check your weight on Venus by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="ven-input-value" min="1" max="999" required><button id="ven-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on Venus would be <span id="ven-weight">¯\_(ツ)_/¯</span> kg!</p>
-        </div>
-        <div class="card" id="earth-card">
-          <h2>Earth</h2>
-          <img src="./images/nasa-Earth-unsplash.jpg" alt="">
-          <p>Earth is the third planet in the Solar System and and home to most people. Earth has a mass equal to 1.0 Earths.  Check your weight on Earth by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="earth-input-value" min="1" max="999" required><button id="earth-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on Earth would be <span id="earth-weight">¯\_(ツ)_/¯</span> kg!</p>
-        </div>
-        <div class="card" id="moon-card">
-          <h2>Moon</h2>
-          <img src="./images/michael-G9bDsVeHM7I-unsplash.jpg" alt="">
-          <p>The Moon is Earth's only moon and is tidally locked to Earth, meaning that the same side always faces Earth.  The Moon was first reached by humans by the Apollo 11 mission in 1969. The Moon has a mass equal to 0.0123 Earths.  Check your weight on the Moon by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="moon-input-value" min="1" max="999" required><button id="moon-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on the Moon would be <span id="moon-weight">¯\_(ツ)_/¯</span> kg!</p>
-        </div>
-        <div class="card" id="mars-card">
-          <h2>Mars</h2>
-          <img src="./images/nasa-Mars-unsplash.jpg" alt="">
-          <p>Mars is the fourth planet in the Solar System and is often referred to as the red planet.  Mars is currently the main target of colonization and considered the first step to becoming an interstellar civilization.  Mars has a mass equal to 0.107 Earths.  Check your weight on Mars by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="mars-input-value" min="1" max="999" required><button id="mars-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on Mars would be <span id="mars-weight">¯\_(ツ)_/¯</span> kg!</p>
-        </div>
-        <div class="card" id="jup-card">
-          <h2>Jupiter</h2>
-          <img src="./images/nasa-Jupiter-unsplash (1).jpg" alt="">
-          <p>Jupiter is the fifth planet in the Solar System and as a massive gas giant also the largest of the planets. Jupiter has 95 discovered moons, but the most interesting of them might be the ice-covered Europa.  There is a possibility that underneath the ice, in the dark ocean, lie the first extraterrestrial life that we encounter. Jupiter has a mass equal to 317.8 Earths.  Check your weight on Jupiter by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="jup-input-value" min="1" max="999" required><button id="jup-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on Jupiter would be <span id="jup-weight">¯\_(ツ)_/¯</span> kg!</p>
-        </div>
-        <div class="card" id="sat-card">
-          <h2>Saturn</h2>
-          <img src="./images/nasa-Saturn-unsplash.jpg" alt="">
-          <p>Saturn is the sixth planet in the Solar System and is best known for its large ring system.  Saturn, like Jupiter, is a gas giant and has at least a whopping 146 moons. The largest moon, Titan, is larger than the planet Mercury. Saturn has a mass equal to 95.159 Earths.  Check your weight on Saturn by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="sat-input-value" min="1" max="999" required><button id="sat-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on Saturn would be <span id="sat-weight">¯\_(ツ)_/¯</span> kg!</p>
-        </div>
-        <div class="card" id="ura-card">
-          <h2>Uranus</h2>
-          <img src="./images/nasa-Uranus-unsplash.jpg" alt="">
-          <p>Uranus is the seventh planet in the Solar System. Uranus is an ice giant with a lowest minimum temperature of 49 Kelvin or -224 °C. Although Uranus also has a ring system similar to that of Saturn, it is extremely dark in comparison. Uranus has a mass equal to 14.563 Earths.  Check your weight on Mars by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="ura-input-value" min="1" max="999" required><button id="ura-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on Uranus would be <span id="ura-weight">¯\_(ツ)_/¯</span> kg!</p>
-        </div>
-        <div class="card" id="nep-card">
-          <h2>Neptune</h2>
-          <img src="./images/nasa-Neptune-unsplash.jpg" alt="">
-          <p>Neptune is the eigth planet in the Solar System.  Neptune, like its brother planet Uranus, is an ice giant, but unlike Uranus it has active weather patterns.  The 1989 Voyager 2 flyby recorded a "Great Dark Spot" similar to the "Great Red Spot" on Jupiter. Neptune has a mass equal to 17.147 Earths.  Check your weight on Neptune by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="nep-input-value" min="1" max="999" required><button id="nep-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on Neptune would be <span id="nep-weight">¯\_(ツ)_/¯</span> kg!</p>
-        </div>
-        <div class="card" id="pluto-card">
-          <h2>Pluto</h2>
-          <img src="./images/nasa--Pluto-unsplash.jpg" alt="">
-          <p>Pluto, although some scientists seem to disagree, is the ninth planet in the Solar System. In 2006 the International Astronomical Union changed the definition of a planet and started calling Pluto a "dwarf planet", but many planetary astrologers and common folk alike disagree. Pluto has a mass equal to 0.00218 Earths.  Check your weight on Pluto by typing your weight below.</p>
-          <div class="input-container">
-              <input type="number" id="pluto-input-value" min="1" max="999" required><button id="pluto-card-btn" class="input-btn">Calculate</button>
-          </div>
-          <p>Your weight on Pluto would be <span id="pluto-weight">¯\_(ツ)_/¯</span> kg!</p>
         </div>
       </main>
 
